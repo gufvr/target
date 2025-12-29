@@ -4,13 +4,13 @@ import { MaterialIcons } from '@expo/vector-icons'
 import { styles } from './styles'
 import { colors } from '@/theme'
 
-export type SummayProps = {
+export type SummaryProps = {
   label: string
   value: string
 }
 
 type Props = {
-  data: SummayProps
+  data: SummaryProps
   icon: {
     name: keyof typeof MaterialIcons.glyphMap
     color: ColorValue
