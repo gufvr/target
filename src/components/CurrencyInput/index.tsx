@@ -16,7 +16,6 @@ export function CurrencyInput({ label, ...rest }: Props) {
       <Input
         style={styles.Input}
         placeholderTextColor={colors.gray[400]}
-        prefix='R$ '
         delimiter='.'
         separator=','
         precision={2}
