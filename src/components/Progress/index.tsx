@@ -1,7 +1,6 @@
 import { View, Text } from 'react-native'
 
 import { styles } from './styles'
-import { colors } from '@/theme'
 
 type SavedValue = {
   current: string
@@ -22,7 +21,7 @@ export function Progress({ data }: Props) {
         <Text style={styles.value}>
           {data.current}
 
-          <Text style={styles.target}>de {data.target}</Text>
+          <Text style={styles.target}> de {data.target}</Text>
         </Text>
 
         <Text style={styles.percentage}>{data.percentage.toFixed(0)}%</Text>
