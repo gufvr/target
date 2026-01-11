@@ -13,10 +13,10 @@ import { useTransactionsDatabase } from '@/database/useTransactionsDatabase'
 
 export default function Transaction() {
   const [amount, setAmount] = useState(0)
+  const [isCreating, setIsCreating] = useState(false)
   const [observation, setObservation] = useState('')
 
   const [type, setType] = useState(TransactionTypes.Input)
-  const [isCreating, setIsCreating] = useState(false)
 
   const params = useLocalSearchParams<{ id: string }>()
   const transactionsDatabase = useTransactionsDatabase()
@@ -41,7 +41,7 @@ export default function Transaction() {
       Alert.alert('Sucesso!', 'Transação salva.', [
         {
           text: 'Ok',
-          onPress: () => router.back(),
+          onPress: router.back,
         },
       ])
     } catch (error) {

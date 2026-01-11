@@ -100,7 +100,7 @@ export default function InProgress() {
 
       <Button
         title='Nova Transação'
-        onPress={() => router.navigate(`/transaction/$${params.id}`)}
+        onPress={() => router.navigate(`/transaction/${params.id}`)}
       />
     </View>
   )
