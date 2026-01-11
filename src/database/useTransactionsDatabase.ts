@@ -38,7 +38,7 @@ export function useTransactionsDatabase() {
       SELECT id, target_id, amount, observation, created_at, updated_at
       FROM transactions
       WHERE target_id = ${id}
-      ORDER BY creat_at DESC
+      ORDER BY created_at DESC
     `)
   }
 
